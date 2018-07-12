@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<!-- <link rel="icon" type="image/png" href="{{ url_for('landing.static', filename='img/favicon.png') }}"> -->
+<link rel="stylesheet" href="estilo.css">
+<title>Oktopus | Centralize and Manage Your Data.</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Improve your data accessibility with Oktopus. A fast, reliable and centralized way to manage your data and dashboars from multiple sources.">
+</head>
+
+    <div class="container">
+        <!-- cabecalho -->
+        <header class="cabecalho">
+            <img  class="img-topo" src="{{ url_for('landing.static', filename='img/Path_1.png') }}">
+            <nav>
+                <figure class="logo">
+                    <img src="{{ url_for('landing.static', filename='img/logo.png') }}" alt="Oktopus">
+                </figure>
+
+                <menu>
+                    <ul class="menu flex">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#plans">Pricing</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </menu>
+                <div class="lang">
+                        <a href="/pt">PT</a><a href="/en" class="ativo">EN</a>
+                    </div>
+
+                    <a class="login button clear" data-action="login">Login</a>
+
+                    <div class="modal acesso">
+                        <div class="board " data-action-form="cadastrar">
+                            <div class="branding ">
+                                
+                                 <h1 class="big-text">Data accessibility management in a
+                                    <strong>fast</strong>, <strong>safe</strong> and <strong>centralized</strong> way.
+                                </h1>  
+                        
+                                <figure class="img">
+                                    <img src="{{ url_for('landing.static', filename='img/img-platform-home.png') }}" alt="UI plataform">
+                                </figure>
+                            </div>
+                            <div class="board-user" >
+                                    <figure class="logo">
+                                            <img src="{{ url_for('landing.static', filename='img/logo-one.png') }}" alt="Oktopus">
+                                        </figure>
+    
+                                        <form class="form formLogin">
+                                            <h1 class="subtitulo">Sign in your data workspace</h1>
+                                            <label>
+                                                <span class="label">Your e-mail</span>
+                                                <input type="email" name="email" placeholder="Type here your email" required>
+                                            </label>
+                                            <label>
+                                                <div class="flex extremos">
+                                                    <span class="label">Password</span>
+                                                    <a class="smal">Forgot your password?</a>
+                                                </div>
+                                                
+                                                <input type="password" name="email" required placeholder="Min de 4 caracteres">
+                                            </label>
+                                            <input type="submit" value="Continue →" class="button send">
+                                            
+                                            <span class="separator">Don't have an account</span>
+    
+                                            <a data-action="cadastrar" class="button clear">Create your data workspace</a>
+    
+                                        </form>
+                                        
+                                        <form class="form formCadastrar">
+                                                <h1 class="subtitulo">Sign up for free</h1>
+                                                <label>
+                                                    <span class="label">Tell us your name?</span>
+                                                    <input type="text" name="nome" placeholder="fullname" required>
+                                                </label>
+                                                <label>
+                                                    <span class="label">Email</span>
+                                                    <input type="email" name="email" required placeholder="johndoe@businessinc.com">
+                                                </label>
+                                                <label>
+                                                    <span class="label">Type a name to this workspace</span>
+                                                        <div class="flex workspace">
+                                                            <input type="text" name="workspace" placeholder="Your Team"> <span>.oktopusapp.com</span>
+                                                        </div>
+                                                 </label>
+                                                <label>
+                                                    <div class="flex extremos">
+                                                        <span class="label">Password</span>
+                                                        <!-- <a class="smal">Esqueceu a senha?</a> -->
+                                                    </div>
+                                                    
+                                                    <input type="password" name="email" required placeholder="A great password">
+                                                </label>
+                                                <input type="submit" value="️️✔ Sign Up" class="button signup">
+                                                
+                                                <span class="separator">Already an oktopus friend?</span>
+                        
+                                                <a data-action="login" class="button clear">Sign in</a>
+                        
+                                            </form>
+                                            
+                                        
+                                        <a class="link cancelar" data-action="fechar">← Cancel</a>
+                                    </div>
+                        </div>
+                    </div>              
+
+            </nav>
+        </header>
+    </div>
+
+    <!-- HERO -->
+    <section class="container" id="hero">
+        <div class="hero ">
+            <div class="box-texto">
+
+                <h1 class="big-text">Data accessibility management in a
+                    <strong>fast</strong>, <strong>safe</strong> and <strong>centralized</strong> way.
+                </h1>
+                <div class="box flex">
+                    <div>
+                        <p>Improve your data accessibility, through sharing to your team and clients, your data insights, indicators and dashboards.
+                        </p>
+                        <a  class="signup button" data-action="cadastrar">start</a>
+                    </div>
+                    <figure class="img">
+                            <img src="{{ url_for('landing.static', filename='img/img-platform-home.png') }}" alt="UI plataform">
+                    </figure>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- FEATURE -->
+    <section id="features" class="relative">
+        <img src="{{ url_for('landing.static', filename='img/Path_14.png') }}" class="bg">
+        <!-- <img src="{{ url_for('landing.static', filename='img/Path_15.png') }}" class="img-left"> -->
+        <div class=" container ">
+            <h1 class="title">See how we can help you with <strong>oktopus<strong></h1>
+
+            <ul class="features">
+                <li class="dash flex">
+                    <img src="{{ url_for('landing.static', filename='img/multiple-sources.png') }}" alt="Imagem que representa Dados de múltiplas fontes num só lugar, numa só tela">
+                    <div class="text ">
+                        <h2 class="subtitulo">Data from<strong>multiple sources</strong> in a all-in-on dashboard</h2>
+                        <p>Consolidate your data in on screen. <br>
+                            You don't need multiple browser tabs for that. Social Media, Web Analytics, Business Data...
+                            <!-- <a >Saiba mais sobre integração...</a> -->
+                        </p>
+                    </div>
+                </li>
+                <li class="sso flex">
+                    <img src="{{ url_for('landing.static', filename='img/sso.png') }}" alt="Imagem que representao Single Sign-On com o Pentaho">
+                    <div class="text ">
+                        <h2 class="subtitulo">Single Sign-On with Pentaho</h2>
+                        <p>Pentaho users are able to use low-friction single-sign-on process.</p>
+                    </div>
+                </li>
+                <li class="share flex">
+                    <img src="{{ url_for('landing.static', filename='img/shared_icon.png') }}" alt="Imagem que representao Single Sign-On com o Pentaho">
+                    <div class="text ">
+                        <h2 class="subtitulo">Share and control data accessibility by Users and Groups.</h2>
+                        <p>Your internal team and customer will be able to access any data in a secure way.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+
+    <!-- PRECO -->
+    <section id="plans">
+        <img src="{{ url_for('landing.static', filename='img/bg-preco.png') }}" class="bg">
+        <div class="box-plan container">
+            <h1 class="title"> For any business segment and size</h1>
+            <div class="plans">
+                <div class="individual-plans free">
+                    <h2>Free</h2>
+                    <p>With small limits for your team.</p>
+                    <!--  -->
+                    <div class="preco relative">
+                        <span class="moeda">$</span>
+                        <span class="valor">0</span>
+                        <span class="tipo-pagamento">montlhy</span>
+                    </div>
+                    <ul class="sets">
+                        <li> ✔️ <strong>Multiples</strong> dashboards </li>
+                        <li> ✔️ Up to <strong>3 data sources</strong></li>
+                        <li> ✔️ Up to <strong>3 users</strong></li>
+                        <li> ✔️ <strong>Support</strong></li>
+                    </ul>
+                    <a  class="signup button" data-action="cadastrar">start</a>
+                </div>
+                <div class="individual-plans enterprise">
+                    <h2>Enterprise</h2>
+                    <p>Multiple data sources or multiple users? </p>
+                    <!--  -->
+                    <div class="preco relative">
+                        <span class="moeda"></span>
+                        <span class="valor">-</span>
+                        <span class="tipo-pagamento"></span>
+                    </div>
+                    <ul class="sets">
+                        <li> ✔️ <strong>Multiple</strong> sources</li>
+                        <li> ✔️ <strong>Multiple</strong> users</li>
+                        <li> ✔️ <strong>Dedicated customer suscess</strong></li>
+                    </ul>
+                    <a href="" class="contact button">Get in touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="relative">
+        <div class="container">
+            <div class="box-texto">
+                    <h1 class="title ">Oktopus Roadmap</h1>
+                    <p>We belive that you can help us to build a great solution...</p>
+                </div>
+                <div class="box-voting">
+                    <h2 class="subtitulo">So you, can choose features that you really want ASAP?</h2>
+                    <ul class="lista-votacao">
+                        <li> 
+                            <label class="checked" title="Já está em desenvolvimento 🚀">
+                                <input type="checkbox" disabled value="Link de compartilhamento público para Read-Only dashboards">
+                                <span class="check"></span>
+                                Read-only public links
+                            </label>
+                            <span class="soon">Comming soon...</span>
+                        </li>
+                        <li>
+                            <label class="checked" >
+                                <input type="checkbox" disabled value="Widget Alerts">
+                                <span class="check"></span>
+                                Widget Alerts
+                            </label>
+                            <span class="soon">Comming soon...</span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Email Templates">
+                                <span class="check"></span>
+                                Email Templates
+                            </label>
+                            <span class="voting" title="Votos que já recebeu"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="On-Premises">
+                                <span class="check"></span>
+                                On-Premises
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Custom Theme">
+                                <span class="check"></span>
+                                Custom Themes
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                            <input type="checkbox" value="Pre-built dashboards">
+                            <span class="check"></span>
+                            Vertical pre-built dashboards
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="API Integration">
+                                <span class="check"></span>
+                                API Integration
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Custom Domains">
+                                <span class="check"></span>
+                                Custom Domains
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Bot + Automations">
+                                <span class="check"></span>
+                                Bot + Automations
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                        <li>
+                            <label>
+                                <input type="checkbox" value="Referral Program">
+                                <span class="check"></span>
+                                Referral Program
+                            </label>
+                            <span class="voting"></span>
+                        </li>
+                    </ul>
+                    <a  class="button send">Send</a>           
+
+                    <div class="box-contato">
+                      <p>Want something not listed here?</p>
+                      <a href="" class="button contact">Tell us</a>
+                    </div>
+                       
+                    <img src="{{ url_for('landing.static', filename='img/bg-build.png') }}" class="bg">
+                    
+
+                </div>
+        </div>
+        </section>
+        <div class="modal email">
+                <div class="box-email">                        
+                    <label>
+                        E-mail:*
+                        <input type="email" name="email" placeholder="Type your e-mail here" >
+                    </label>
+                    <label>
+                        Any recommendation?
+                        <textarea name="mensagem" placeholder="Type your recommendation here and thank you! " rows="5"></textarea>
+                    </label>
+                    <input type="button" value="Send my vote" class="button send" data-action="enviarEmail">
+                    <a class="button  cancelar" onClick="fecharModal(this)" data-action="cancelar"> Cancel
+                    </a>    
+                </div>
+            </div>
+        <footer class="rodape relative">
+            <img src="{{ url_for('landing.static', filename='img/bg-rodape.png') }}" class="bg">
+            
+            <div class="container">
+                <h3 class="mini-chamada">Big Data and Analytics questions? Get in touch <a href="https://www.oncase.com.br/" target="_blank">onca.se</a></h3>
+            </div>
+                <div class="container">
+                <h3 class="suporte">Any help? <br>
+                <a href="mailto:hello@oktopusapp.com" target="_blank">hello@oktopusapp.com</a></h3>
+            </div>
+            <span class="link min">powered by <a href="https://www.oncase.com.br/" target="_blank"><img src="{{ url_for('landing.static', filename='img/onca.png') }}" alt="oncase"></a></span>
+        </footer>
+</body>
+
+    <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script>
+        var button=false,
+        options=[],
+        voting=[],
+        email='',
+        texto='';   
+        $('.lista-votacao input[type="checkbox"]').on('change',function(){
+                var voto=$(this).parent().parent().find('.voting')
+            if($(this).prop('checked')){
+                options.push($(this).val());
+                voto.html('+1');
+                voto.addClass('ativo');
+            }
+            else{
+                options.pop();
+                voto.removeClass('ativo');
+            }
+
+            if(options.length > 0){
+                $('.button.send').addClass('ativo');}
+            else{
+                $('.button.send').removeClass('ativo');
+                
+            }
+            
+        });
+
+        $('.box-voting .button.send').on('click',function(){
+            $('.modal.email').addClass('ativo');
+        });
+
+
+        // $('[data-action="cancelar"]').on('click',function(){
+        //     $(this).parent().parent().removeClass('ativo');
+        // });
+        function fecharModal(obj){
+            $(obj).parent().parent().removeClass('ativo');
+        }
+
+        $('[data-action="enviarEmail"]').on('click',function(){
+            var pai=$(this).parent(), 
+            mail=pai.find('input[name="email"]').val(),
+            text=pai.find('textarea').val();
+
+            if(mail){
+                email=mail;
+                voting=options;
+                if(text){
+                    texto=text;
+                }
+                alert('Thank you for you interest! \n News of Oktopus for you soon! 👏👏👏');
+                fecharModal($(this));
+            }else{
+                alert('Please, type your e-mail! We want you to be the first to know the news 🤗');
+            }
+
+        });
+        
+    $('[data-action]').on('click',function(){
+        var val=$(this).data('action');
+        if(val == 'login' || val == 'cadastrar'){
+            $('[data-action-form]').attr('data-action-form',val);
+            $('.modal.acesso').addClass('ativo');
+        }
+    });
+    $('[data-action="fechar"]').on('click',function(){
+        $('.modal.ativo').removeClass('ativo');
+    });
+
+      var $doc = $('html, body');
+    $('.menu a').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+
+    </script>
+</html>

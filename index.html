@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+<head >
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+<link rel="icon" type="image/png" href="img/icon.png">
+<link rel="stylesheet" href="estilo.css">
+<title>Wilson | Recebendo o que é importante onde estiver e quando quiser.</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<meta name="description" content="Melhore a qualidade de sua acessibilidade a dados. Gerencie e centralize dados de multiplas fontes com o Oktopus.">
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <!-- cabecalho -->
+        <header class="cabecalho">
+            <nav>
+                <figure class="logo">
+                    <!-- <img src="{{ url_for('landing.static', filename='img/logo.png') }}" alt="Oktopus"> -->
+                    <img src="img/logo.png">
+                </figure>
+
+                <menu>
+                    <ul class="menu flex">
+                        <li><a href="#sobre">Sobre</a></li>
+                        <!-- <li><a href="#features">O que é</a></li> -->
+                        <li> <a class="login button clear" href="#beBeta" data-action="login">Seja um beta!</a></li>
+                    </ul>
+                </menu>
+                <!-- <a class="login button clear" data-action="login">Seja um beta!</a> -->
+
+            </nav>
+        </header>
+    </div>
+
+    <!-- HERO -->
+    <section class="container" id="hero">
+        <div class="hero ">
+            <div class="box-texto">
+
+                <h1 class="big-text">O seu  <strong>Data Concierge</strong></h1>
+                <div class="box flex">
+                    <div>
+                        <p>
+                                Para quem precisa de acesso instantâneo aos seus dados o <strong>Wilson</strong>     é um assistente virtual que entrega as informações que você <strong>precisa, onde estiver</strong>  e <strong>quando quiser</strong>. Diferente das ferramentas complexas ele fornece exatamente o que você pediu, <strong>instantaneamente, informações complexas ou não</strong>.
+                        </p>
+                    
+                        <a  class="signup button" data-action="cadastrar" href="#beBeta">Seja um usuário Beta!</a>
+
+                        <div class="contaienr" id="integrations">
+                                <h2 class="title">Integrações</h2>
+                                <p>Integre o Wilson com ferramentas de comunicação que mais funciona para você ou o seu time.</p>
+                                <ul>
+
+                                    <li class="flex item">
+                                        <object data="slack-1.svg" class="svg" type=""></object><span>Slack</span> 
+                                    </li>
+                                    <li class="flex item">
+                                        <object data="telegram.svg" class="svg" type=""></object><span>Telegram</span> <span class="soon">Em breve...</span>
+                                    </li>
+                                    <li class="flex item">
+                                        <object data="facebook-messenger.svg" class="svg" type=""></object><span>Messenger </span>  <span class="soon">Em breve...</span>
+                                    </li>
+                                </ul>
+                                    
+                        </div>
+                    </div>
+                    <figure class="img">
+                           <video src="wilson-working.mp4"  width="380" autoplay loop></video>
+                    </figure>
+                </div>
+            </div>
+
+
+        </div>
+     
+    </section>
+    
+    <div class="bg-color"></div>
+
+    <!-- FEATURE -->
+    <section id="sobre" class="relative">
+        <img src="img/board.png" class="bg">
+        <!-- <img src="{{ url_for('landing.static', filename='Path_15.png') }}" class="img-left"> -->
+        <!-- <div class=" container ">
+            <h1 class="title">Saiba mais sobre o Wilson...</h1>
+
+        </div> -->
+
+    </section>
+
+
+
+        <footer class="rodape relative">
+            <img src="img/board.png" style="opacity:.5;" class="bg">
+            
+            <!-- <div class="container"> -->
+            <div id="beBeta">
+                    <div role="main" id="trial-wilson-47a696dd64ac27562779"></div>
+                    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
+                    <script type="text/javascript">
+                     new RDStationForms('trial-wilson-47a696dd64ac27562779-html', 'UA-72638634-1').createForm();
+                    </script>
+                <h3 class="mini-chamada">Qualquer dúvida sobre dados, fala com a <a href="https://www.oncase.com.br/" target="_blank">onca.se</a></h3>
+            </div>
+            <div class="container">
+                <h3 class="suporte">Ajuda? <br>
+                <a href="mailto:hello@oktopusapp.com" target="_blank">suporte@oncase.com.br</a></h3>
+            </div>
+            <span class="link min">powered by <a href="https://www.oncase.com.br/" target="_blank"><img src="img/onca.png" alt="oncase"></a></span>
+        </footer>
+</body>
+
+    <!-- jquery -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <script>
+    
+
+        var $doc = $('html, body');
+    $('.menu a,.signup').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 500);
+        return false;
+    });
+
+    </script>
+
+    
+</html>
