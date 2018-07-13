@@ -264,8 +264,10 @@ div#trial-wilson-47a696dd64ac27562779 {
         .lista-votacao li {flex-wrap: wrap}
         .box-contato {padding: 1rem;flex-wrap: wrap;text-align: center;border-radius: 12px;}
         .box-contato p {font-size: .9rem;margin: 0 0 0.5rem;}
-        .button.signup {margin: 1rem auto;}
-        .menu a {padding: .5rem 1rem;font-size: .7rem;display: block;}
+        .button.signup {margin: 1rem auto;padding: 1rem 2rem; font-size: 1rem}
+        menu {margin: 0 auto;}
+        .menu.flex {flex-direction: column;align-items: center;}
+        .menu a {padding: .5rem 1rem;font-size: .9rem;display: block;}
         .logo {max-width: 220px;margin: 0 auto 1rem;}
         .cabecalho .login {margin: 2rem auto 0;}
         .box-plan .title {padding-top: 1rem;}
@@ -283,6 +285,7 @@ div#trial-wilson-47a696dd64ac27562779 {
             margin: 2rem auto;
         }
         img#__lpform_nome_icon{opacity: 0 !important;}
+       .rodape  #conversion-trial-wilson-47a696dd64ac27562779 {width: 100%!important;}
     }
 
 
