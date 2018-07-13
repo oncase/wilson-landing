@@ -292,4 +292,9 @@ div#trial-wilson-47a696dd64ac27562779 {
         padding: 1rem .8rem !important;
         border-radius: 35px !important;
     }
-   
+    #integrations.plataformas .title{text-align: center}
+    #integrations.plataformas ul{max-width: inherit;    width:-moz-fit-content; width: fit-content;
+        margin: 0 auto;}
+    #integrations.plataformas img{max-width: 200px;margin: 0;}
+    #integrations.plataformas .item{float: left; text-align: center}
+    #integrations.plataformas ul .item:nth-child(even){float: inherit}

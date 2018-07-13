@@ -28,7 +28,7 @@
 
                 <menu>
                     <ul class="menu flex">
-                        <li><a href="#sobre">Sobre</a></li>
+                        <!-- <li><a href="#sobre">Sobre</a></li> -->
                         <!-- <li><a href="#features">O que é</a></li> -->
                         <li> <a class="login button clear" href="#beBeta" data-action="login">Seja um beta!</a></li>
                     </ul>
@@ -54,8 +54,8 @@
                         <a  class="signup button" data-action="cadastrar" href="#beBeta">Seja um usuário Beta!</a>
 
                         <div class="contaienr" id="integrations">
-                                <h2 class="title">Integrações</h2>
-                                <p>Integre o Wilson com ferramentas de comunicação que mais funciona para você ou o seu time.</p>
+                                <h2 class="title">Inferfaces</h2>
+                                <p>Use o Wilson com ferramentas de comunicação que mais funciona para você ou o seu time.</p>
                                 <ul>
 
                                     <li class="flex item">
@@ -72,9 +72,26 @@
                         </div>
                     </div>
                     <figure class="img">
-                           <video src="wilson-working.mp4"  width="380" autoplay loop></video>
+                           <video src="wilson-working.mp4"  width="100%" style="max-width: 350px;" autoplay loop></video>
                     </figure>
                 </div>
+            </div>
+
+            <div class="contaienr plataformas" id="integrations">
+                    <h2 class="title">Plataformas analíticas suportadas</h2>
+                    <!-- <p>Use o Wilson com ferramentas de comunicação que mais funciona para você ou o seu time.</p> -->
+                    <ul>
+
+                        <li class="flex item">
+                            <img src="img/pentaho-logo.png" alt="Pentaho logo">
+                        </li>
+                        <li class="flex item">
+                                <strong>Mais plataformas em breve...</strong>
+                        </li>
+                        
+                    </ul>
+                    
+                        
             </div>
 
 
@@ -115,6 +132,16 @@
             </div>
             <span class="link min">powered by <a href="https://www.oncase.com.br/" target="_blank"><img src="img/onca.png" alt="oncase"></a></span>
         </footer>
+
+        <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+    window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+    d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+    _.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+    $.src="https://v2.zopim.com/?5qmbG1wRdl4rUqR2eurvlfJLJb4jHq4V";z.t=+new Date;$.
+    type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+    </script>
+    <!--End of Zendesk Chat Script-->
 </body>
 
     <!-- jquery -->
@@ -124,6 +151,7 @@
     crossorigin="anonymous"></script>
 
     <script>
+        
     
 
         var $doc = $('html, body');
